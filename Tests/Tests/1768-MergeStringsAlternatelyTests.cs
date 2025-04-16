@@ -14,7 +14,7 @@ namespace Tests.tests
         [Theory]
         [InlineData("abc", "pqr", "apbqcr")]
         [InlineData("abc", "pqr", "apbqcr")]
-        [InlineData("abc", "pqr", "apbqcr")]
+        [InlineData("abc", "aa", "apbaa")]
         public void MergeAlternately_ReturnsCorrectResult(string a, string b, string expected)
         {
             var result = MergeAlternatelySolution.MergeAlternately(a, b);
