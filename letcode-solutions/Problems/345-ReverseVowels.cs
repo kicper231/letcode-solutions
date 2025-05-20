@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace letcode_solutions.Problems
+﻿namespace letcode_solutions.Problems
 {
     public class ReverseVowelsSolution
     {
@@ -20,9 +14,9 @@ namespace letcode_solutions.Problems
             int i = 0;
             int j = s.Length - 1;
 
-            while(i<j)
+            while (i < j)
             {
-                while(i<j && !chars.Contains(s[i]) )
+                while (i < j && !chars.Contains(s[i]))
                 {
                     i++;
                 }
@@ -39,7 +33,6 @@ namespace letcode_solutions.Problems
 
                 i++;
                 j--;
-
             }
 
             return new string(result);

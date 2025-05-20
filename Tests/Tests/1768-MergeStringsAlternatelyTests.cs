@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using letcode_solutions.problems;
-using Xunit;
-
+﻿using letcode_solutions.problems;
 
 namespace Tests.tests
 {
@@ -14,7 +7,7 @@ namespace Tests.tests
         [Theory]
         [InlineData("abc", "pqr", "apbqcr")]
         [InlineData("abc", "pqr", "apbqcr")]
-        [InlineData("abc", "aa", "apbaa")]
+        [InlineData("abc", "aa", "aabac")]
         public void MergeAlternately_ReturnsCorrectResult(string a, string b, string expected)
         {
             var result = MergeAlternatelySolution.MergeAlternately(a, b);
